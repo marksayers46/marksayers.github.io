@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+    --clr-primary-200: #F3EED9;
+    --clr-primary-400: #7c3e29;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #222C2A;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #000;
+    background-image: url("./assets/img/scifi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    margin: 2rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+span {
+    color: #d38934;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.7rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+    font-size: 18px;
+}
