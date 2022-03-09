@@ -5,37 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image" href="./assets/img/smiley-face.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="home">
-            <h3 class="logo">Port<span>folio.</span></h3>
-        </a>
-        <nav>
-            <ul class="navigation">
-                <li>
-                    <a href="home" class="home">Home</a>
-                </li>
-                <li>
-                    <a href="about" class="about">About</a>
-                </li>
-                <li>
-                    <a href="projects"class="projects">Projects</a>
-                </li>
-                <li>
-                    <a href="skills" class="skills">Skills</a>
-                </li>
-                <li>
-                    <a href="contact" class="contact">Contact</a>
-                </li>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"">Port<span>folio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-        
-    </header>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Mark Sayers</div>
+                <div class="text-3">And I'm a <span>Web Developer</span></div>
+                <a href="#">Hire Me</a>
+            </div>
+        </div>
+    </section>
+   
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="assets/img/selfie.jpg" alt="selfie image">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Mark and I'm a <span>Web Developer</span></div>
+                    <p>A Frontend Developer who is creative and innovative. Passionate about the finer details of writing modular, reusable code, semantic, and accessible front-end architecture. Thinking about the big picture and comfortable collaborating with both the design team and software engineers to ensure the best delivery method in incremental development cycles. An eye for design and making sure the finished product looks better than the mock-up, flows smoothly, and is functional for the end user. Look forward to challenges and is flexible with delivery methods, handling multiple projects, and last minute design changes.</p>
+                    <a href="#">View My Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">UI/UX Developer</div>
+                        <p>Freelancing for Blue ORCA Marketing, Designing, Developing, Monthly Maintenance, and SEO/SEM Digital Marketing!</p>
+                        <a href="https://www.okcproton.com/" class="btn">View My Work</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code-branch"></i>
+                        <div class="text">My GitHub</div>
+                        <p>Version control, team workflow, branching, commits, pushing, pulling, merging, and code reviews. Click here to see my projects.</p>
+                        <a href="https://github.com/marksayers46" class="btn">View My GitHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="text">My Linkedin</div>
+                        <p>I post projects that I'm working on, and connect with like minded people. Check out my Linkedin to see what I've been up to and leave me a DM.</p>
+                        <a href="https://www.linkedin.com/in/mark-sayers-b4107762/" class="btn">View My Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    
+    
     <script src="./script.js"></script>
 </body>
 </html>

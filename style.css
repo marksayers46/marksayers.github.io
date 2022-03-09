@@ -1,76 +1,430 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
-:root {
-    --clr-primary-200: #F3EED9;
-    --clr-primary-400: #7c3e29;
-
-    --clr-neutral-100: #FFF;
-    --clr-neutral-900: #222C2A;
-
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-accent: 'Playfair Display', serif;
-}
-
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    color: var(--clr-neutral-100);
-    font-family: var(--ff-primary);
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.3;
-}
-
-body,
-h1,
-h2,
-h3,
-p {
+* {
     margin: 0;
-}
-
-header {
-    display: flex;
-    background-color: #000;
-    background-image: url("./assets/img/scifi.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-.logo {
-    margin: 2rem 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-span {
-    color: #d38934;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.navigation {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2.7rem;
-}
-
-ul li {
-    list-style: none;
-}
-
-a {
-    color: var(--clr-neutral-100);
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    font-size: 18px;
 }
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .logo a span {
+    color: crimson;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.8s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+
+
+
+/* menu btn styling */
+.menu-btn {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* home content styling */
+.home {
+    background: url(./assets/img/bannershot.png) center;
+    /* background-color: #000; */
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    color: #fff;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: crimson;
+    font-weight: 600;
+}
+
+.home .home-content a {
+    background: crimson;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: crimson;
+    background: none;
+    outline: 1px solid #fff;
+}
+
+
+
+
+/* all similar content styling code */
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+
+
+/* about section styling */
+.about, .services {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after {
+    content: "who I am"
+}
+
+.about .about-content,
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    background: crimson;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    background: none;
+    color: crimson;
+}
+
+
+
+
+/* services section styling */
+.services {
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before {
+    background: #fff;
+}
+
+.services .title::after {
+    content: "recent work";
+    background: #111;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 300px;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    transform: scale(1.02);
+    background: crimson;
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+}
+
+/* .services .serv-content .card p {
+    margin-bottom: 10px;
+} */
+
+.services .serv-content .card .btn {
+    color: crimson;
+}
+
+.services .serv-content .card:hover a {
+    color: #111;
+}
+
+
+/* responsive @media query */
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 1;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d"
+    }
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li  {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width {
+        max-width: 800px;
+    }
+    .about .about-content .column {
+        width: 100%;
+    }
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+        padding: 9px 20px;
+    }
+    .services .serv-content .card {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+
