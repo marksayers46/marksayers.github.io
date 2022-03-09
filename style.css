@@ -312,6 +312,46 @@ section .title::after {
 }
 
 
+
+
+/* skills section styling */
+.skills {
+    color: #111;
+    background: #fff;
+}
+
+.skills .title::before {
+    background: #111;
+}
+
+.skills .title::after {
+    content: "recent work";
+    background: #fff;
+}
+
+.skills .skills-content i {
+    height: 30px;
+    width:20px;
+}
+
+/* contact section start */
+.contact {
+    color: #fff;
+    background: #111;
+}
+
+.contact .title::before {
+    background: #fff;
+}
+
+.contact .title::after {
+    content: "get in touch";
+    background: #111;
+}
+
+
+
+
 /* responsive @media query */
 @media (max-width: 1300px) {
     .home .max-width{
