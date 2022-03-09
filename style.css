@@ -330,8 +330,7 @@ section .title::after {
 }
 
 .skills .skills-content i {
-   height:80px;
-   width:120px;
+   font-size: 100px;
 }
 
 
