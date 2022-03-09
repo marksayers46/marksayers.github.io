@@ -330,9 +330,12 @@ section .title::after {
 }
 
 .skills .skills-content i {
-    height: 30px;
-    width:20px;
+   height:80px;
+   width:120px;
 }
+
+
+
 
 /* contact section start */
 .contact {
