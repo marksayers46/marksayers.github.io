@@ -352,6 +352,10 @@ section .title::after {
     background: #111;
 }
 
+.contact-content .contact-me {
+    display: flex;
+    
+}
 
 
 
