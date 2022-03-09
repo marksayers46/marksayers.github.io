@@ -331,6 +331,7 @@ section .title::after {
 
 .skills .skills-content i {
    font-size: 100px;
+   padding: 20px;
 }
 
 
