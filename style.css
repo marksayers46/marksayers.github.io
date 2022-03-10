@@ -357,8 +357,14 @@ section .title::after {
     justify-content: space-around;
 }
 
+.icons i {
+    color: crimson;
+    font-size: 30px;
+}
 
-
+.sub-title {
+    color: darkgrey;
+}
 
 
 
