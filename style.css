@@ -366,6 +366,10 @@ section .title::after {
     color: darkgrey;
 }
 
+.sub-title:hover {
+    color: crimson;
+}
+
 
 
 
