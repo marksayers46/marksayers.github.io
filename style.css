@@ -89,7 +89,6 @@
 /* home content styling */
 .home {
     background: url(./assets/img/bannershot.png) center;
-    /* background-color: #000; */
     height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
@@ -360,6 +359,7 @@ section .title::after {
 .icons i {
     color: crimson;
     font-size: 30px;
+    margin-bottom: 5px;
 }
 
 .sub-title {
