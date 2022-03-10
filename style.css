@@ -352,10 +352,14 @@ section .title::after {
     background: #111;
 }
 
-.contact-content .contact-me {
+.contact-content .contact-me .icons {
     display: flex;
-    
+    justify-content: space-around;
 }
+
+
+
+
 
 
 
