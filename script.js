@@ -1,15 +1,25 @@
-// sticky scroll function
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 0){
-            $('.navbar').addClass('sticky');
+            $('.navbar').addClass("sticky");
         }else{
-            $('.navbar').removeClass('sticky');
+            $('.navbar').removeClass("sticky");
+        }
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
         }
     });
-    // toggle menu/navbar script
+
+    // .scroll-up-btn slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
+    // toggle hamburger menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass('active');
-        $('.menu-btn i').toggleClass('active');
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
     });
 });
