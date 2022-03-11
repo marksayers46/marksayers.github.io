@@ -22,4 +22,20 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+    // typing animation script
+    const typed = new Typed(".typing", {
+        strings: ["Freelancer", "Web Developer", "Creator", "Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    // typing animation script
+    const typedAbout = new Typed(".typing-2", {
+        strings: ["Full Stack Developer", "Web Developer", "Creator", "Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 });
