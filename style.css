@@ -13,7 +13,9 @@
     margin: auto;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 /* navbar styling */
